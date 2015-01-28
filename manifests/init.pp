@@ -9,7 +9,7 @@ class zpr (
   $storage_tag    = undef,
   $worker_tag     = undef,
   $readonly_tag   = undef,
-  $env_tag        = undef,
+  $env_tag        = '',    # Puppet 4 doesn't like undef here.
   $source_user    = undef,
   $backup_dir     = undef,
   $pub_key        = undef,
